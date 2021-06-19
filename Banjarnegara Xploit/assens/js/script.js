@@ -29,6 +29,19 @@ function topFunction() {
 }
 
 
+// navbar color change
+navbar = document.getElementById("navbar");
+
+window.onscroll = function() {scrollFunction2()};
+
+function scrollFunction2() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 20) {
+    navbar.style.background = "black";
+  } else {
+    navbar.style.background = "transparent";
+  }
+}
+
 
 // preload
 var overlay = document.getElementById("overlay"); /* untuk mengambil elemen berdasarkan id yang ada id html */

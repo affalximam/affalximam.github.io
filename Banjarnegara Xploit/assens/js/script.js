@@ -17,16 +17,17 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
-  } else {
+  };
+  else {
     mybutton.style.display = "none";
-  }
-}
+  };
+};
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+};
 
 
 // navbar color change
@@ -37,10 +38,11 @@ window.onscroll = function() {scrollFunction2()};
 function scrollFunction2() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 20) {
     navbar.style.background = "black";
-  } else {
+  };
+  else {
     navbar.style.background = "transparent";
-  }
-}
+  };
+};
 
 
 // preload

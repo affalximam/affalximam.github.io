@@ -23,9 +23,9 @@ body{
   font-family: 'danielbk';
 }
 
-/* .navbar-custom{
+.navbar-custom{
   background-color: #000;
-} */
+}
 
 .navbar-custom .navbar-toggler:hover,
 .navbar-custom .navbar-toggler:focus,

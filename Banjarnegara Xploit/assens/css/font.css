@@ -87,3 +87,19 @@
   url('../font/BalooTammudu2-SemiBold.ttf') format('truetype'),
   url('../font/BalooTammudu2-SemiBold.svg') format('svg');
 }
+
+
+@font-face {
+		font-family: "Samurai";
+		src: url("../font/samurai.ttf");
+	}
+
+@font-face {
+		font-family: "Samureix-6YRn6";
+		src: url("../font/Samureix-6YRn6.ttf");
+	}
+
+@font-face {
+		font-family: "Samureix-51ylz";
+		src: url("../font/Samureix-51ylz.ttf");
+	}

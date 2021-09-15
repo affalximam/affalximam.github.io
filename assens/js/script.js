@@ -103,13 +103,32 @@ function addClass(id) {
 $(document).ready(function() {
 	$(window).scroll(function() {
 
-		if ($(this).scrollTop() < $("#jumbotron").height()) {
+		if ($(this).scrollTop() > $('#jumbotron').height()/1.5 ) {
 			$('.jumbotron .scroll-down').css({
-				'display': 'block'
+				'opacity': '0'
 			});
+			
 		} else {
 			$('.jumbotron .scroll-down').css({
-				'display': 'none'
+				'opacity': '1'
+			});
+			
+		}
+
+	});
+});
+
+$(document).ready(function() {
+	$(window).scroll(function() {
+
+		if ($(this).scrollTop() < $('#jumbotron').height()/4 ) {
+			$('.jumbotron h1, .jumbotron h2, .jumbotron .jumb-img-1').css({
+				'opacity': '1'
+			});
+			
+		} else {
+			$('.jumbotron h1, .jumbotron h2, .jumbotron .jumb-img-1').css({
+				'opacity': '0'
 			});
 		}
 

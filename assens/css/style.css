@@ -45,7 +45,7 @@
 
   /* image */
   --bg-one: url('../image/bg-1.png');
-  --profile: url('../image/me-5.png');
+  --profile: url('../image/me-1.png');
 
   /* svg */
   --bug-hunter: url('../svg/bug.svg');
@@ -1313,7 +1313,6 @@ footer .footer-2 a:hover i {
   transform: rotate(45deg);
   transform-origin: center center;
 }
-
 footer .footer-3 p {
   text-align: center;
   color: var(--color-nine);

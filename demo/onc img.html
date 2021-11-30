@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IMAGE TO BASE64</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: rgb(70, 70, 70);
+        color: white;        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        text-align: center;
+      }
+      .container{
+        background-color: rgb(90, 90, 90);
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .container h1{
+        margin: 10px 0 5px 0;
+      }
+      .container h3{
+        margin: 5px 0 5px 0;
+      }
+      input{
+        margin: 5px 0 5px 0;
+        padding: 5px;
+      }
+      .result-container{
+        background-color: rgb(90, 90, 90);
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      #result_box{
+        width: 70%;
+        width: 20%;
+        overflow-x: scroll;
+        word-wrap: wrap;
+        padding: 10px;
+        margin: 5px auto;
+      }
+      button{
+        text-align: center;
+        margin: 5px auto;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="main_container">
+      <h1 class="heading">Simple Image To Base 64 Tools</h1>
+      <label for="file">
+        <h3>Select a image file (max 1mb):</h3>
+      </label>
+      <input
+        type="file"
+        id="file"
+        data-max-size="2048"
+        accept="image/x-png,image/jpeg"
+      />
+      <button onclick="encodeImage()">Encode image</button>
+    </div>
+    <div class="result-container" id="result_view">
+      <h3 id="result_header"></h3>
+      <span id="result_box"></span>
+      <img id="result_image" />
+      <button onclick="copyToClipboard()" id="copy_btn">Copy</button>
+    </div>
+
+    <script>
+      const resultView = document.getElementById("result_view");
+      const resultHeader = document.getElementById("result_header");
+      const resultBox = document.getElementById("result_box");
+      const resultImage = document.getElementById("result_image");
+      const copyBtn = document.getElementById("copy_btn");
+
+      function encodeImage() {
+        hideAll();
+        let file = document.getElementById("file");
+        let reader = new FileReader();
+        if (file.files[0]) {
+          if (file.files[0].size <= 1024 * 1024) {
+            reader.readAsDataURL(file.files[0]);
+            reader.onload = function () {
+              displayString();
+              resultHeader.innerHTML = "Encoded image:";
+              resultBox.innerHTML = reader.result.toString();
+            };
+          } else alert("File size too big");
+        }
+      }
+
+      function decodeImage() {
+        hideAll();
+        let image = document.getElementById("image").value;
+        displayImage();
+        resultHeader.innerHTML = "Decoded image:";
+        resultImage.src = image;
+      }
+
+      function encodeString() {
+        hideAll();
+        let text = document.getElementById("text");
+        displayString();
+        resultHeader.innerHTML = "Encoded string:";
+        resultBox.innerHTML = btoa(text.value);
+      }
+
+      function decodeString() {
+        hideAll();
+        let text = document.getElementById("e_text");
+        displayString();
+        resultHeader.innerHTML = "Decoded string:";
+        resultBox.innerHTML = atob(text.value);
+      }
+
+      function displayString() {
+        resultView.style.display = "block";
+        resultHeader.style.display = "block";
+        resultBox.style.display = "block";
+        copyBtn.style.display = "block";
+        resultView.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+        });
+      }
+
+      function displayImage() {
+        resultView.style.display = "block";
+        resultHeader.style.display = "block";
+        resultImage.style.display = "block";
+        resultView.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+        });
+      }
+
+      function hideAll() {
+        resultHeader.style.removeProperty("display");
+        resultBox.style.removeProperty("display");
+        resultImage.style.removeProperty("display");
+        resultView.style.removeProperty("display");
+        copyBtn.style.removeProperty("display");
+      }
+
+      function copyToClipboard() {
+        let tempInput = document.createElement("textarea");
+        tempInput.value = resultBox.innerHTML;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999999); /*For mobile devices*/
+        document.execCommand("copy");
+        tempInput.remove();
+        alert("Text copied to clipboard");
+      }
+    </script>
+  </body>
+</html>

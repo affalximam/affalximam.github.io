@@ -1,10 +1,5 @@
-ErrorDocument 401 /php/401-lompat.php
-ErrorDocument 402 /php/402-lompat.php
-ErrorDocument 403 /php/403-lompat.php
-ErrorDocument 404 /php/404-lompat.php
+ErrorDocument 401 https://affalximam.github.io/
+ErrorDocument 402 https://affalximam.github.io/
+ErrorDocument 403 https://affalximam.github.io/
+ErrorDocument 404 https://affalximam.github.io/
 Options -Indexes
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteCond %{REQUEST_URI} !/$
-RewriteRule ^(.*)$ $1\.php

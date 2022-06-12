@@ -1,5 +1,0 @@
-ErrorDocument 401 https://affalximam.github.io/
-ErrorDocument 402 https://affalximam.github.io/
-ErrorDocument 403 https://affalximam.github.io/
-ErrorDocument 404 https://affalximam.github.io/
-Options -Indexes

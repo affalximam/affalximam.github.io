@@ -430,7 +430,7 @@ $('.backtop').on('click', function() {
 (function() {
 
 	AOS.init({
-		once: true;	
+		once: 'true'
 	});
 
 })();

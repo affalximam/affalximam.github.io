@@ -1,0 +1,117 @@
+¦------------------------------------------------------------------------------------------------¬
+¦                                                                                                 |
+¦                                                                                                 |
+¦     ############      ############      ############      ############      ##                  |
+¦     ############      ############      ############      ############      ##                  |
+¦     ##        ##      ##                ##                ##        ##      ##                  |
+¦     ##        ##      ##                ##                ##        ##      ##                  |
+¦     ############      ############      ############      ############      ##                  |
+¦     ############      ############      ############      ############      ##                  |
+¦     ##        ##      ##                ##                ##        ##      ##                  |
+¦     ##        ##      ##                ##                ##        ##      ##                  |
+¦     ##        ##      ##                ##                ##        ##      ##############      |
+¦     ##        ##      ##                ##                ##        ##      ##############      |
+¦                                                                                                 |
+¦-------------------------------------------------------------------------------------------------|
+¦                                                                                                 |
+¦     Author = Imam Nurfalah                                                                      |
+¦                                                                                                 |
+¦     Name = DATALINK 1                                                                           |
+¦                                                                                                 |
+¦     Whatsapp = +62 859 7317 0278                                                                |
+¦                                                                                                 |
+¦     Blog = affalximam.blogspot.com                                                              |
+¦                                                                                                 |
+¦________________________________________________________________________________________________*/
+
+----------------
+    Gambar
+----------------
+
+1. Images utama
+
+    affalximam.png
+      link: https://affalximam.000webhostapp.com/Img/affalximam.png
+    
+    bg2.png
+      link: https://affalximam.000webhostapp.com/Img/bg2.jpg
+    
+    headerbg.png
+      link: https://affalximam.000webhostapp.com/Img/headerbg.jpg
+    
+    About.png
+      link: https://affalximam.000webhostapp.com/Img/about.png
+    
+    
+2. Services
+
+
+    branding.png
+      link: https://affalximam.000webhostapp.com/Img/services/Branding.png
+    
+    bug bounty.png
+      link: https://affalximam.000webhostapp.com/Img/services/Bug%20Bounty.png
+    
+    Designer.png
+      link: https://affalximam.000webhostapp.com/Img/services/Designer.png
+    
+    development.png
+      link: https://affalximam.000webhostapp.com/Img/services/Development.png
+    
+    Marketing.png
+      link: https://affalximam.000webhostapp.com/Img/services/Marketing.png
+    
+    web design.png
+      link: https://affalximam.000webhostapp.com/Img/services/Web%20design.png
+    
+    
+3. Community
+    
+    
+    ilmutek.png
+      link: https://affalximam.000webhostapp.com/Img/comunity/ilmutek.png
+    
+    linuxops.png
+      link: https://affalximam.000webhostapp.com/Img/comunity/linuxops.png
+    
+    x-spc.png
+      link: https://affalximam.000webhostapp.com/Img/comunity/xspc.png
+      
+      
+4. Certificate
+    
+    Certxspc
+      link:https://affalximam.000webhostapp.com/Img/Cert/certxspc.jpg
+      
+    certjx
+      link: https://affalximam.000webhostapp.com/Img/Cert/certjx.jpg
+      
+    certcss
+      link: https://affalximam.000webhostapp.com/Img/Cert/CSS_certificate.jpg
+      
+    certhtml
+      link: https://affalximam.000webhostapp.com/Img/Cert/HTML_certificate%20(1).jpg
+      
+    certjs
+      link: https://affalximam.000webhostapp.com/Img/Cert/JavaScript_certificate%20(1).jpg
+      
+      
+      
+---------------
+  Link A href
+---------------
+
+blog : affalximam.blogspot.com
+
+link css:  https://affalximam.000webhostapp.com/style1.css
+
+link javascript:  https://affalximam.000webhostapp.com/script1.js
+
+
+---------------
+Contact
+---------------
+
+link wa: wa.me/6285973170278?text=hai+kak+saya+ingin+bertanya+tentang+web+affalximam
+
+link telegram : t.me/affalximam

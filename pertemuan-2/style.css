@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #52b2cf;
+    padding: 10px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+}
+
+header nav a{
+    font-size: 30px;
+    color: black;
+    align-content: center;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.jumbotron{
+    background-color: #edf2fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron a{
+    margin: 20px auto;
+    color: black;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #4481eb;
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 10px;
+}
+
+.about{
+    padding: 50px 50px;
+    background-color: #daeaf6;
+}
+
+.about h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.about .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.about img{
+    width: 400px;
+}
+
+.about p{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1.2em;
+}
+
+.contact{
+    background-color: #bed4e4;
+    padding: 50px 20px;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.contact form{
+    background-color: #95b8d1;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+.contact form p{
+    margin-top: 20px;
+}
+
+.contact form input[type=text],
+.contact form input[type=email]{
+    width: calc(100% - 25px);
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contact textarea{
+    width: calc(100% - 25px);
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contact button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #b6d1ff;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #1b1e23;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+main.blog{
+    display: flex;
+}
+
+.blog aside{
+    width: 20%;
+    padding: 20px;
+    background-color: #c8e8ff;
+    height: 100vh;
+}
+
+.blog aside ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.blog aside ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.blog article{
+    width: 80%;
+    padding: 0 20px;
+}
+
+.blog article h1{
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 0 10px 0;
+}
+
+.blog article h2{
+    text-align: center;
+    font-size: 1.8em;
+    padding: 0 0 30px 0;
+}
+
+.blog .post{
+    display: flex;
+    background-color: #cfe4f3;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.blog .post img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.blog article img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+.blog article p {
+    text-align: justify;
+    font-size: 1.5em;
+    text-indent: 20px;
+}

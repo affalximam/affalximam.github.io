@@ -1,7 +1,7 @@
-.jumbotron{
-    min-height: 100vh;
+.nav-link.active {
+    color: #ffc107 !important; /* Warning color */
 }
 
-.nav-link.active {
-    color: #ffc107 !important;
+.jumbotron, .about ,.order{
+    min-height: 100vh;
 }

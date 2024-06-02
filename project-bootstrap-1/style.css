@@ -1,0 +1,7 @@
+.jumbotron{
+    min-height: 100vh;
+}
+
+.nav-link.active {
+    color: #ffc107 !important;
+}
